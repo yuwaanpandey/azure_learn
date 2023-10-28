@@ -1,0 +1,9 @@
+{
+	"name": "yuwaanpandey-df",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6867a875-61f2-44c0-9de3-37a092cc9a87",
+		"tenantId": "a7e3d8cd-7db3-43e2-8be5-955fd0d5f2ae"
+	}
+}
