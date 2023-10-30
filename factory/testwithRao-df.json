@@ -1,0 +1,9 @@
+{
+	"name": "testwithRao-df",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b8a3cbc0-1354-420c-8d5b-3352c3c7997b",
+		"tenantId": "a7e3d8cd-7db3-43e2-8be5-955fd0d5f2ae"
+	}
+}
