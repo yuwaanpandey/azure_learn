@@ -1,0 +1,12 @@
+{
+	"name": "MongoDbV2Collection1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MongoDb_test",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MongoDbV2Collection",
+		"schema": []
+	}
+}
