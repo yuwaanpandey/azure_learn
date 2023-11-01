@@ -1,0 +1,15 @@
+{
+	"name": "MongoDbAtlasDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MongoDbAtlasLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MongoDbAtlasCollection",
+		"schema": [],
+		"typeProperties": {
+			"collection": "listingsAndReviews"
+		}
+	}
+}

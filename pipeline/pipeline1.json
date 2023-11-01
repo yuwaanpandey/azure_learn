@@ -16,51 +16,32 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "MongoDbV2Source",
+						"type": "MongoDbAtlasSource",
 						"batchSize": 100
 					},
 					"sink": {
-						"type": "MongoDbV2Sink",
-						"writeBatchTimeout": "00:30:00",
-						"writeBehavior": "insert"
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "MongoDbV2Collection1",
+						"referenceName": "MongoDbAtlasDataSet",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "MongoDbV2Collection1",
+						"referenceName": "storageds",
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Copy data1",
-				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "CopyFromMongoDB",
-						"dependencyConditions": [
-							"Completed"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"enableStaging": false
-				}
 			}
 		],
 		"annotations": []
